@@ -1,0 +1,20 @@
+.codegui_toolbar a {
+	text-decoration: none;
+	display: block;
+	height: 22px;
+	width: 22px;
+	background-position: left top;
+	visibility: visible;
+}
+
+.codegui_toolbar a:hover {
+	background-position: left bottom;
+}
+
+.codegui_toolbar td.spacer2 {
+    width: 12px;
+}
+
+div.codegui_panel {
+	display: none;
+}
