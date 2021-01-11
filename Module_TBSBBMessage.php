@@ -8,6 +8,9 @@ use GDO\File\GDT_Path;
 /**
  * BBCode Message decoder module.
  * Hook into GDT_Message::$DECODER
+ * 
+ * @TODO: Implement BBDecoder.
+ * 
  * @author gizmore
  */
 final class Module_TBSBBMessage extends GDO_Module
@@ -53,7 +56,12 @@ final class Module_TBSBBMessage extends GDO_Module
     ###############
     public function getSmileys()
     {
-        return include($this->getSmileyMapping());
+        static $MAPPING = null;
+        if ($MAPPING === null)
+        {
+            $MAPPING = include($this->getSmileyMapping());
+        }
+        return $MAPPING;
     }
     
     ###############
@@ -65,4 +73,10 @@ final class Module_TBSBBMessage extends GDO_Module
         return $decoder->decode();
     }
 
+    public function hrefSmiley($code)
+    {
+        $img = $this->getSmileyMapping()[$code];
+        return $this->wwwPath("img/smilies/{$img}");
+    }
+    
 }

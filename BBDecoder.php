@@ -1,6 +1,11 @@
 <?php
 namespace GDO\TBSBBMessage;
 
+/**
+ * Decode BBCode Messages into html output.
+ * Performance is not mandatory.
+ * @author livinskull
+ */
 final class BBDecoder
 {
     private $message;
@@ -12,6 +17,7 @@ final class BBDecoder
     
     public function decode()
     {
+        # Call BBDecoder here
         return $this->message;
     }
     
