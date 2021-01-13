@@ -75,7 +75,7 @@ final class Module_TBSBBMessage extends GDO_Module
 
     public function hrefSmiley($code)
     {
-        $img = $this->getSmileyMapping()[$code];
+        $img = $this->getSmileys()[$code];
         return $this->wwwPath("img/smilies/{$img}");
     }
     
