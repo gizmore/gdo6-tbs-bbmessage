@@ -18,3 +18,11 @@
 div.codegui_panel {
 	display: none;
 }
+
+table.codegui_toolbar {
+	display: block;
+}
+
+table.codegui_toolbar td {
+	display: inline-block;
+}
