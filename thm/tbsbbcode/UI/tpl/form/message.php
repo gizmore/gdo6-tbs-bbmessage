@@ -15,7 +15,7 @@ use GDO\Util\Javascript;
      rows="6"
      <?=$field->htmlRequired()?>
      <?=$field->htmlDisabled()?>
-     ><?=html($field->getVarInput())?></textarea>
+     ><?=html($field->getVar())?></textarea>
      <?=include('tbs_bb_smileypanel.php')?>
    </div>
   <?=$field->htmlError()?>
