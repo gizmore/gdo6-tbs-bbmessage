@@ -17,7 +17,7 @@ final class Module_TBSBBMessage extends GDO_Module
 {
     public function getTheme() { return 'tbsbbcode'; }
     
-    public function getDependencies() { return 'BBCode'; }
+    public function getDependencies() { return ['BBCode']; }
     
     ############
     ### Init ###
