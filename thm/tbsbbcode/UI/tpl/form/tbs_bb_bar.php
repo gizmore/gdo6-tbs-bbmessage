@@ -11,7 +11,7 @@ if (!function_exists('tbsbbimg'))
      */
     function tbsbbimg($img)
     {
-        return GWF_WEB_ROOT . 'GDO/TBSBBMessage/img/gui/' . $img;
+        return GDO_WEB_ROOT . 'GDO/TBSBBMessage/img/gui/' . $img;
     }
 }
 ?>
