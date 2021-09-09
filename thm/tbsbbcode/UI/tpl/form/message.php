@@ -22,5 +22,5 @@ use GDO\Util\Javascript;
 </div>
 <?php
 $script_html = 'tbscodegui_edit_'.$field->num.' = new TTextArea(\''.$field->id().'\');';
-Javascript::addJavascriptInline($script_html);
+Javascript::addJavascriptPostInline($script_html);
 ?>
