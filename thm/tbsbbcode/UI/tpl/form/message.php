@@ -1,6 +1,6 @@
 <?php
 /** @var $field \GDO\UI\GDT_Message **/
-use GDO\Util\Javascript;
+use GDO\Javascript\Javascript;
 ?>
 <div class="gdt-container<?=$field->classError()?>">
   <?=$field->htmlIcon()?>

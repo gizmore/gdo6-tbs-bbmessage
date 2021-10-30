@@ -1,6 +1,6 @@
 <?php
 use GDO\TBSBBMessage\Module_TBSBBMessage;
-use GDO\Util\Javascript;
+use GDO\Javascript\Javascript;
 use GDO\UI\GDT_Message;
 
 /** @var $field GDT_Message **/
