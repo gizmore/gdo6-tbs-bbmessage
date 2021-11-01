@@ -20,6 +20,6 @@ echo "</div>\n";
 
 # Init smiley panel
 $script_html = 'var tbscodegui_smilies_'.$n.' = document.getElementById("div_code_smilies_'.$n.'"); var tbscodegui_smilies_on_'.$n.' = true; TBSCodeGUI_SwapSmilies('.$n.');';
-Javascript::addJavascriptPostInline($script_html);
+Javascript::addJSPostInline($script_html);
 
 return '';

@@ -29,7 +29,7 @@ final class Module_TBSBBMessage extends GDO_Module
     
     public function onIncludeScripts()
     {
-        $this->addJavascript('js/tbs-bbcode.js');
+        $this->addJS('js/tbs-bbcode.js');
         $this->addCSS('css/tbs-bbcode.css');
     }
 
